@@ -35,4 +35,42 @@ print('{} {}'.format('one', 'two'))  # 유연하게 사용할 수 있다.
 print('{1} {0}'.format('one', 'two'))  #format의 파라미터의 1번째는 0번으로 처리된다.
 print()
 
-#현재 계속 학습 중
+#%s
+
+print("%10s" % ('nice'))
+print('{:>10}'.format('nice')) #결과는 똑같음
+print()
+
+print("%-10s" % ('nice'))
+print('{:10}'.format('nice')) #결과는 똑같음
+print()
+
+print('{:$>10}'.format('nice'))
+print()
+
+print('{:^10}'.format('nice')) #중앙 정렬
+print()
+
+print('%5s' % ('python study'))    #최소 5글자
+print('%.5s' % ('python study'))   #5글자 절삭
+print('%10.5s' % ('python study')) #공간은 10개, 출력은 5개만
+print()
+
+#%d
+
+print('%d %d' % (1, 2))
+print('{} {}'.format(1, 2))  #결과는 같음
+print()
+
+print('%4d' % 42)
+print("{:4d}".format(42))  #문자열과 달리 이때는 d를 작성해야함.
+print()
+
+#%f
+print('%f' % (3.141592653589793))
+print('{:f}'.format(3.141592653589793))
+print()
+
+print('%06.2f' % (3.141592653589793))
+print('{:06.2f}'.format(3.141592653589793))  #결과는 같음
+print()
